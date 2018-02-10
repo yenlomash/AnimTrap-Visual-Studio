@@ -1,0 +1,5 @@
+c:\users\sanjaya senevirathne\source\repos\AnimTool Visual Studio Extention\AnimTool Visual Studio Extention\AnimTool Visual Studio ExtentionVSIX\obj\Debug\AnimTool Visual Studio ExtentionVSIX.csprojResolveAssemblyReference.cache
+c:\users\sanjaya senevirathne\source\repos\AnimTool Visual Studio Extention\AnimTool Visual Studio Extention\AnimTool Visual Studio ExtentionVSIX\obj\Debug\AnimTool Visual Studio ExtentionVSIX.csproj.CoreCompileInputs.cache
+c:\users\sanjaya senevirathne\source\repos\AnimTool Visual Studio Extention\AnimTool Visual Studio Extention\AnimTool Visual Studio ExtentionVSIX\obj\Debug\AnimTool Visual Studio Extention.dll
+c:\users\sanjaya senevirathne\source\repos\AnimTool Visual Studio Extention\AnimTool Visual Studio Extention\AnimTool Visual Studio ExtentionVSIX\obj\Debug\AnimTool Visual Studio Extention.pdb
+c:\users\sanjaya senevirathne\source\repos\AnimTool Visual Studio Extention\AnimTool Visual Studio Extention\AnimTool Visual Studio ExtentionVSIX\obj\Debug\extension.vsixmanifest

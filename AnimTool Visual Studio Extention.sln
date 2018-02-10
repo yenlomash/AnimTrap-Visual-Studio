@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AnimTool Visual Studio Extention", "AnimTool Visual Studio Extention\AnimTool Visual Studio Extention.vcxproj", "{A588AC47-1A5B-4953-9B1F-B17E9D1C66A9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4857C652-5DEE-41B3-92E3-A113043D898F} = {4857C652-5DEE-41B3-92E3-A113043D898F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AnimTool Visual Studio ExtentionUI", "AnimTool Visual Studio ExtentionUi\AnimTool Visual Studio ExtentionUi.vcxproj", "{4857C652-5DEE-41B3-92E3-A113043D898F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimTool Visual Studio ExtentionVSIX", "AnimTool Visual Studio Extention\AnimTool Visual Studio ExtentionVSIX\AnimTool Visual Studio ExtentionVSIX.csproj", "{DCDCA5A7-0B29-4A8F-824A-846B033113A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A588AC47-1A5B-4953-9B1F-B17E9D1C66A9}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{A588AC47-1A5B-4953-9B1F-B17E9D1C66A9}.Debug|x86.ActiveCfg = Debug|Win32
+		{A588AC47-1A5B-4953-9B1F-B17E9D1C66A9}.Debug|x86.Build.0 = Debug|Win32
+		{A588AC47-1A5B-4953-9B1F-B17E9D1C66A9}.Release|Any CPU.ActiveCfg = Release|Win32
+		{A588AC47-1A5B-4953-9B1F-B17E9D1C66A9}.Release|x86.ActiveCfg = Release|Win32
+		{A588AC47-1A5B-4953-9B1F-B17E9D1C66A9}.Release|x86.Build.0 = Release|Win32
+		{4857C652-5DEE-41B3-92E3-A113043D898F}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{4857C652-5DEE-41B3-92E3-A113043D898F}.Debug|x86.ActiveCfg = Debug|Win32
+		{4857C652-5DEE-41B3-92E3-A113043D898F}.Debug|x86.Build.0 = Debug|Win32
+		{4857C652-5DEE-41B3-92E3-A113043D898F}.Release|Any CPU.ActiveCfg = Release|Win32
+		{4857C652-5DEE-41B3-92E3-A113043D898F}.Release|x86.ActiveCfg = Release|Win32
+		{4857C652-5DEE-41B3-92E3-A113043D898F}.Release|x86.Build.0 = Release|Win32
+		{DCDCA5A7-0B29-4A8F-824A-846B033113A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCDCA5A7-0B29-4A8F-824A-846B033113A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCDCA5A7-0B29-4A8F-824A-846B033113A5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DCDCA5A7-0B29-4A8F-824A-846B033113A5}.Debug|x86.Build.0 = Debug|Any CPU
+		{DCDCA5A7-0B29-4A8F-824A-846B033113A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCDCA5A7-0B29-4A8F-824A-846B033113A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCDCA5A7-0B29-4A8F-824A-846B033113A5}.Release|x86.ActiveCfg = Release|Any CPU
+		{DCDCA5A7-0B29-4A8F-824A-846B033113A5}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF02F0CE-BA9E-4F9B-952A-ACF31FE7DCA0}
+	EndGlobalSection
+EndGlobal

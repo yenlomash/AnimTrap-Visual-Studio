@@ -1,0 +1,7 @@
+﻿; AnimTool Visual Studio Extention.def : Declares the module parameters.
+
+LIBRARY      "AnimTool Visual Studio Extention.DLL"
+
+EXPORTS
+	DllCanUnloadNow            PRIVATE
+	DllGetClassObject          PRIVATE

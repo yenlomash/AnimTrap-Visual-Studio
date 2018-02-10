@@ -1,0 +1,132 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "windows.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""windows.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "1000  CTMENU       ""PackageCommands.cto""\r\n"
+    "#define VER_FILEDESCRIPTION_STR ""AnimTool Visual Studio Extention Package Resources\\0""\r\n"
+    "#define VER_INTERNALNAME_STR ""AnimTool Visual Studio ExtentionUI.dll\\0""\r\n"
+    "#define VER_ORIGINALFILENAME_STR ""AnimTool Visual Studio ExtentionUI.dll\\0""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+
+IDB_IMAGES    PNG    "Images.png"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+IDI_PACKAGE_ICON   ICON      "Package.ico"
+IDI_FILE_ICON    ICON    "File.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_AnimTool_Visual_Studio_Extention_DLG DIALOGEX 0, 0, 80, 80
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Click Me",IDC_CLICKME_BTN,5,5,70,70
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_OFFICIALNAME        "AnimTrap Tool"
+    IDS_COMPANYNAME         "SourceWallet "
+    IDS_PRODUCTDETAILS      "AnimTrap is a CSS Framework for animations. Its like bootstrap for JS animations. All you need is to import AnimTrap and use it for animations in your webapp easily."
+    IDS_VERSION             "1.1.1"
+
+    IDS_EDITOR_NAME         "AnimTool Visual Studio Extention"
+    IDS_EDITORCAPTION       "animtool visual studio extention Editor"
+    IDS_NEWFILE_TEMPLATES_ENTRY "AnimTool Visual Studio Extention Files"
+    IDS_DEFAULT_NAME        "MyExtFile.animtool visual studio extention"
+    IDS_FILE_DESCRIPTION    "AnimTool Visual Studio Extention File (animtool visual studio extention)"
+    IDS_READONLY            " [Read Only]"
+    IDS_FORMATSTR           "AnimTool Visual Studio Extention files (*.animtool visual studio extention)\n*.animtool visual studio extention\n\n"
+    IDS_OUTSIDEEDITORFILECHANGE 
+                            "This file has changed outside the editor. Do you wish to reload it?"
+
+
+    IDS_WINDOW_TITLE        "AnimControl"
+    IDS_E_CANTCREATETOOL    "Unable to create the tool"
+    IDS_E_GETVIEWOBJECT_CALLED_AGAIN 
+                            "GetViewObject was unexpectedly called more then once."
+    IDS_BUTTONCLICK_MESSAGE "Inside AnimTool_Visual_Studio_ExtentionWindowPane::OnButtonClick"
+
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1000               CTMENU    "PackageCommands.cto"
+#define VER_FILEDESCRIPTION_STR "AnimTool Visual Studio Extention Package Resources\0"
+#define VER_INTERNALNAME_STR "AnimTool Visual Studio ExtentionUI.dll\0"
+#define VER_ORIGINALFILENAME_STR "AnimTool Visual Studio ExtentionUI.dll\0"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,62 @@
+﻿[$RootKey$\Packages\{ffaf760b-a8b7-425c-83c5-b50df1b0854b}]
+@="AnimTool Visual Studio Extention Package"
+"InprocServer32"="$PackageFolder$\AnimTool Visual Studio Extention.dll"
+"CompanyName"="SourceWallet "
+"ProductName"="AnimTrap Tool"
+"ProductVersion"="1.1.1"
+
+[$RootKey$\Packages\{ffaf760b-a8b7-425c-83c5-b50df1b0854b}\SatelliteDll]
+"DllName"="AnimTool Visual Studio ExtentionUI.dll"
+"Path"="$PackageFolder$"
+
+[$RootKey$\Menus]
+"{ffaf760b-a8b7-425c-83c5-b50df1b0854b}"=", 1000, 1"
+
+[$RootKey$\InstalledProducts\AnimTool Visual Studio Extention]
+@="#100"
+"Package"="{ffaf760b-a8b7-425c-83c5-b50df1b0854b}"
+"ProductDetails"="#102"
+"LogoID"="#400"
+"PID"="1.0"
+"UseInterface"=dword:00000000
+
+
+[$RootKey$\ToolWindows\{a8c97bc0-342d-47c3-9eb4-d628ce99c94c}]
+@="{ffaf760b-a8b7-425c-83c5-b50df1b0854b}"
+"Name"="AnimControl"
+"Float"="100,100,300,400"
+"Orientation"="Right"
+"Style"="Float"
+"Window"="{4A9B7E51-AA16-11D0-A8C5-00A0C921A4D2}"
+//The GUID above is the TaskList GUID. You can replace it with any tool 
+//  window GUID to have the new window dock to that tool window.
+
+
+
+[$RootKey$\Editors\{cd1f0015-218b-4d83-a58e-1297c34309ec}]
+@="AnimTool Visual Studio Extention"
+"Package"="{ffaf760b-a8b7-425c-83c5-b50df1b0854b}"
+"DisplayName"="AnimTool Visual Studio Extention"
+"ExcludeDefTextEditor"=dword:00000001
+"AcceptBinaryFiles"=dword:00000000
+
+//The GUID in the below registry entry is the GUID for the text 
+//  logical view, and can be changed to the view that is appropriate
+//  for your editor.
+[$RootKey$\Editors\{cd1f0015-218b-4d83-a58e-1297c34309ec}\LogicalViews]
+"{7651A703-06E5-11D1-8EBD-00A0C90F26EA}"=""
+
+[$RootKey$\Editors\{cd1f0015-218b-4d83-a58e-1297c34309ec}\Extensions]
+"animtool visual studio extention"=dword:00000032
+
+[$RootKey$\KeyBindingTables\{21f14660-cce5-41b3-adbc-a3ca7073073a}]
+@="#1"
+"AllowNavKeyBinding"=dword:00000000
+"Package"="{ffaf760b-a8b7-425c-83c5-b50df1b0854b}"
+
+//The first GUID below is the GUID for the Miscellaneous Files project type, and can be changed
+//  to the GUID of any other project you wish.
+[$RootKey$\Projects\{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}\AddItemTemplates\TemplateDirs\{ffaf760b-a8b7-425c-83c5-b50df1b0854b}\/1]
+@="#100"
+"TemplatesDir"="$PackageFolder$\Templates"
+"SortPriority"=dword:00004E20
