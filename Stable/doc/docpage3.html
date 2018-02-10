@@ -1,0 +1,116 @@
+<head>
+	<link href="css/docstyle.css" rel="stylesheet">
+</head>
+
+        <br>
+            <div class="container">
+                <br>
+<h2>Animate your webpage with scroll</h2>
+<br>
+<p>AnimTrap support to animate elements on your page as you scroll.</p>
+<p>AnimTrap allows you to animate elements as you scroll down, and up. If you scroll back to top, elements will animate to it's previous state and are ready to animate again if you scroll down.</p>
+
+<h4>Basic usage</h4>
+<br>
+<p>All you have to do is to add <code>data-anim</code> attribute to html element, like so:</p>
+
+<pre>
+    <code>
+         &lt;div data-anim="animation_name"&gt;
+    </code>
+</pre>
+
+<p>Script will trigger "animation_name" animation on this element, if you scroll to it.</p>
+
+<h4>Advanced settings</h4>
+<br>
+<p>These settings can be set both on certain elements, or as default while initializing script (in options object without data- part).</p>
+
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Attribute</th>
+        <th scope="col">Description</th>
+        <th scope="col">Example value</th>
+        <th scope="col">Default value</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">data-anim-offset</th>
+        <td>Change offset to trigger animations sooner or later (px)</td>
+        <td>200</td>
+        <td>120</td>
+    </tr>
+    <tr>
+        <th scope="row">data-anim-duration</th>
+        <td>*Duration of animation (ms)	</td>
+        <td>600</td>
+        <td>400</td>
+    </tr>
+    <tr>
+        <th scope="row">data-anim-easing	</th>
+        <td>Choose timing function to ease elements in different ways</td>
+        <td>ease-in-sine</td>
+        <td>ease</td>
+    </tr>
+    <tr>
+        <th scope="row">data-anim-delay</th>
+        <td>Delay animation (ms)</td>
+        <td>300</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <th scope="row">data-anim-anchor</th>
+        <td>Anchor element, whose offset will be counted to trigger animation instead of actual elements offset</td>
+        <td>#selector</td>
+        <td>null</td>
+    </tr>
+    <tr>
+        <th scope="row">data-anim-once</th>
+        <td>Choose wheter animation should fire once, or every time you scroll up/down to element</td>
+        <td>true</td>
+        <td>false</td>
+    </tr>
+    </tbody>
+</table>
+
+<p>*Duration accept values from 50 to 3000, with step 50ms, it's because duration of animation is handled by css, and to not make css longer than it is already I created implementations only in this range. I think this should be good for almost all cases.</p>
+<p>If not, you may write simple CSS on your page that will add another duration option value available, for example:</p>
+
+<code>
+    body[data-anim-duration='4000'] [data-anim], [data-anim][data-anim][data-anim-duration='4000']{
+    transition-duration: 4000ms;
+    }
+</code>
+
+<p>This code will add 4000ms duration available for you to set on AnimTrap elements, or to set as global duration while initializing AnimTrap script.</p>
+
+<h4>Examples:</h4>
+
+<div class="bg-info text-white">
+<pre>
+    <code>
+    &lt;div data-anim="fade-zoom-in" data-anim-offset="200" data-anim-easing="ease-in-sine" data-anim-duration="600"&gt;
+</code>
+</pre>
+</div>
+
+<div class="bg-info text-white">
+<pre>
+    <code>
+    &lt;div data-anim="flip-left" data-anim-delay="100" data-anim-anchor=".example-selector"&gt;
+        </code>
+</pre>
+</div>
+
+<div class="bg-info text-white">
+<pre>
+    <code>
+    &lt;div data-anim="fade-up" data-anim-anchor-placement="top-center"&gt;
+        </code>
+</pre>
+</div>            </div>
+        </div>
+    </div>

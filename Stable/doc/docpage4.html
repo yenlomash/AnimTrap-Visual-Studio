@@ -1,0 +1,44 @@
+ <head>
+    <link href="css/docstyle.css" rel="stylesheet">
+</head>
+ <br>
+
+            <div class="container">
+                <br>
+<h2>AnimTrap Scroll Animation API</h2>
+
+AnimTrap Scroll Features is exposed as a global variable, for now there are three methods available:
+
+<ui>
+    <li><code>init</code> - initialize AnimTrap Scroll  </li>
+    <li><code>refresh</code> - recalculate all offsets and positions of elements (called on window resize)  </li>
+    <li><code>refreshHard</code> - ireinit array with AnimTrap elements and trigger refresh (called on DOM changes that are related to aos elements) </li>
+</ui>
+
+<p>Example execution:</p>
+
+<code>
+    ANIM.refresh();
+</code>
+
+<p>By default ANIM is watching for DOM changes and if there are any new elements loaded asynchronously or when something is removed from DOM it calls <code>refreshHard</code> automatically. In browsers that don't support <code>MutationObserve</code> r like IE you might need to call <code>ANIM.refreshHard() </code>by yourself.</p>
+
+<p>refresh method is called on window resize and so on, as it doesn't require to build new store with ANIMTRAP elements and should be as light as possible.</p>
+
+<h2>Global settings</h2>
+
+<p>If you don't want to change setting for each element separately, you can change it globally.</p>
+<p>To do this, pass options object to <code>init()</code> function, like so:</p>
+
+<pre>
+    <code>
+         &lt;script&gt;
+             Anim.init({
+                 offset: 200,
+                 duration: 600,
+                 easing: 'ease-in-sine',
+                 delay: 100,
+              });
+         &lt;/script&gt;
+    </code>
+</pre>

@@ -1,0 +1,225 @@
+<head>
+    <link href="css/docstyle.css" rel="stylesheet">
+</head>
+
+<div class="container">
+                <br>
+<h2>Testing Everthing OK?</h2>
+<br>
+<p>Now let's try an example using the above header template. Try the following example hover your mouse.is that animted? </p>
+
+<div class="anim-hover-grow">
+    <pre>
+    <code>
+
+            &lt;div class="anim-hover-grow"&gt;
+            AnimTrap Hover Glow
+            &lt;/div&gt;
+    </code>
+</pre>
+</div>
+<h2>Basic Animation</h2>
+<br>
+<p>Add the class <code>animated</code> to the element you want to animate. You may also want to include the class <code>loop</code> for an infinite loop.</p>
+<p>Finally you need to add one of the following classes:</p>
+
+<style type="text/css">
+table, td, th {
+   
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    height: 50px;
+    vertical-align: bottom;
+}
+</style>
+
+ 
+
+<div class="row">
+    <div class="col-3">
+        <code>
+            <p>bounce</p>
+            <p>shake</p>
+            <p>wobble</p>
+            <p>bounceInLeft</p>
+            <p>bounceOutDown</p>
+            <p>fadeIn</p>
+            <p>fadeInLeftBig</p>
+            <p>fadeInUpBig</p>
+            <p>fadeOutLeft</p>
+            <p>fadeOutUp</p>
+            <p>flipOutX</p>
+            <p>rotateIn</p>
+            <p>rotateInUpRight</p>
+            <p>rotateOutUpLeft</p>
+            <p>rollIn</p>
+            <p>zoomInLeft</p>
+            <p>zoomOutDown</p>
+            <p>slideInDown</p>
+            <p>slideOutDown</p>
+        </code>
+    </div>
+
+    <div class="col-3">
+        <code>
+            <p>flash</p>
+            <p>headShake</p>
+            <p>jello</p>
+            <p>bounceInRight</p>
+            <p>bounceOutLeft</p>
+            <p>fadeInDown</p>
+            <p>fadeInRight</p>
+            <p>fadeOut</p>
+            <p>fadeOutLeftBig</p>
+            <p>fadeOutUpBig</p>
+            <p>flipOutY</p>
+            <p>rotateInDownLeft</p>
+            <p>rotateOutUpRight</p>
+            <p>rotateOutUpLeft</p>
+            <p>rollOut</p>
+            <p>zoomInRight</p>
+            <p>zoomOutLeft</p>
+            <p>slideInLeft</p>
+            <p>slideInLeft</p>
+        </code>
+    </div>
+
+    <div class="col-3">
+        <code>
+            <p>pulse</p>
+            <p>swing</p>
+            <p>bounceIn</p>
+            <p>bounceInUp</p>
+            <p>bounceOutRight</p>
+            <p>fadeInDownBig</p>
+            <p>fadeInRightBig</p>
+            <p>fadeOutDown</p>
+            <p>fadeOutRight</p>
+            <p>flipInX</p>
+            <p>lightSpeedIn</p>
+            <p>rotateInDownRight</p>
+            <p>rotateOutDownLeft</p>
+            <p>hinge</p>
+            <p>zoomIn</p>
+            <p>zoomInUp</p>
+            <p>zoomOutRight</p>
+            <p>slideInRight</p>
+            <p>slideOutRight</p>
+        </code>
+    </div>
+
+    <div class="col-3">
+        <code>
+            <p>rubberBand</p>
+            <p>tada</p>
+            <p>bounceInDown</p>
+            <p>bounceOut</p>
+            <p>bounceOutUp</p>
+            <p>fadeIn</p>
+            <p>fadeInLeft</p>
+            <p>fadeOutDownBig</p>
+            <p>fadeOutRightBig</p>
+            <p>flipInY</p>
+            <p>lightSpeedOut</p>
+            <p>rotateInUpLeft</p>
+            <p>rotateOutDownRight</p>
+            <p>jackInTheBox</p>
+            <p>zoomInDown</p>
+            <p>zoomOut</p>
+            <p>zoomOutUp</p>
+            <p>slideInUp</p>
+            <p>slideOutUp</p>
+        </code>
+    </div>
+
+
+
+
+<br><br>
+
+<div class="row">
+
+<div class="container"><div class="container"><div class="container"><div class="container">
+ <h3>   Full Example: </h3>
+    <br>
+    <br>
+    <code>
+        &lt;h1 class="animated infinite bounce"&gt;Example&lt;/h1&gt;
+    </code>
+
+
+<br>
+<p>You can do a whole bunch of other stuff with AnimTrap when you combine it with jQuery or add your own CSS rules. Dynamically add animations using jQuery with ease:</p>
+</div>
+<code>
+    $('#yourElement').addClass('animtrap bounceOutLeft');
+</code>
+
+<br><br>
+<p>You can also detect when an animation ends:</p>
+
+<code>
+    $('#yourElement').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething);
+</code>
+
+<p>You can also extend jQuery to add a function that does it all for you:</p>
+
+
+<pre>
+    <code>
+        $.fn.extend({
+            animtrapCSS: function (animationName, callback) {
+                 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                 this.addClass('animated ' + animationName).one(animationEnd, function() {
+                    $(this).removeClass('animated ' + animationName);
+                    if (callback) {
+                        callback();
+                    }
+                  });
+             return this;
+             }
+         });
+    </code>
+</pre>
+
+<p>And use it like this:</p>
+
+<pre>
+    <code>
+        $('#yourElement').animateCss('bounce');
+        or
+        $('#yourElement').animateCss('bounce', function () {
+         // Do somthing after animation
+         });
+    </code>
+</pre>
+
+<p>You can change the duration of your animations, add a delay or change the number of times that it plays:</p>
+
+<pre>
+    <code>
+        #yourElement {
+             -vendor-animation-duration: 3s;
+             -vendor-animation-delay: 2s;
+             -vendor-animation-iteration-count: infinite;
+         }
+    </code>
+</pre>
+
+<div class="">
+    Note: be sure to replace "vendor" in the CSS with the applicable vendor prefixes (webkit, moz, etc)
+</div>
+
+<br>
+<br>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
